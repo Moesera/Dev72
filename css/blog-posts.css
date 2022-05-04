@@ -1,0 +1,37 @@
+.container-wrapper {
+  margin-top: 8%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.post-container {
+  display: flex;
+  width: 80%;
+  justify-content: space-evenly;
+}
+
+.post-content_box {
+  font-family: var(--main-font);
+  font-size: 2em;
+  width: 45%;
+}
+
+.post-content_box  h2, p {
+  margin-left: 5%;
+  margin-bottom: 0;
+}
+
+.post-content_box p {
+  max-width: 90%;
+}
+
+.post-img_box {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.post-img {
+width: 100%;
+border: solid var(--border-color);
+}

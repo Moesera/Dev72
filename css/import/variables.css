@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700&family=Poppins:wght@600&display=swap');
+
+:root {
+--header-font: "Merriweather Sans", sans-serif;;
+--main-font: "noto-sans", sans-serif;
+--regular-text: "400";
+--heading-text: 700;
+--page-color: #333333;
+--text-color: #ffffff;
+--main-color: #5B5B5B;
+--border-color: #C5B806;
+}
