@@ -96,6 +96,10 @@ width: 100%;
   text-decoration: underline;
 }
 
+img {
+  border: solid 5px var(--border-color)
+}
+
 /* index */
 
 .page-header_txt {
@@ -149,10 +153,6 @@ width: 100%;
   padding-bottom: 20px;
 }
 
-.blog-itm-box h3 {
-
-}
-
 .blog-itm-box p {
 max-width: 600px;
 width: 75%;
@@ -166,8 +166,6 @@ padding: 10px 0px 10px;
 }
 
 .slider-img {
-  border-style: solid;
-  border-color: var(--border-color);
   width: 100%;
 }
 
@@ -277,6 +275,8 @@ transform: scaleX(0);
   flex-direction: column;
   margin-top: 10%;
   font-family: var(--main-font);
+  padding: 15px;
+  background-color: var(--main-color);
 }
 
 .content-box h4 {
@@ -290,7 +290,6 @@ transform: scaleX(0);
 
 .filtered-img {
 width: 100%;
-border: solid var(--border-color);
 box-sizing: border-box;
 }
 

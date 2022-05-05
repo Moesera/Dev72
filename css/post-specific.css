@@ -1,0 +1,55 @@
+.specific-post_wrapper {
+  margin-top: 5%;
+font-family: var(--main-font) ;
+display: flex;
+justify-content: space-around;
+}
+
+.post-header_img {
+  width: 90%;
+}
+
+.post-header_img img {
+width: 100%;
+}
+
+.post-specific-content {
+  max-width: 51.9%;
+  font-family: var(--main-font);
+}
+
+.post-specific-content h2 {
+font-size: 2em;
+}
+
+.post-specific-content p {
+max-width: 90%;
+font-size: 1.5em;
+}
+
+.post-sidebar {
+  width: 20%;
+}
+
+.post-sidebar h2 {
+font-size: 3em;
+margin: 0;
+}
+
+.post-sidebar h3 {
+font-size: 2em;
+margin-bottom: 0;
+}
+
+.post-sidebar p {
+  font-size: 1.6em;
+  margin-top: 0;
+}
+
+.author-img {
+width: 80%;
+}
+
+.author-img img{
+width: 100%;
+}
