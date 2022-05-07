@@ -20,10 +20,12 @@ width: 100%;
 
 .post-specific-content h2 {
 font-size: 2em;
+margin-bottom: 0;
 }
 
 .post-specific-content p {
 max-width: 90%;
+margin-top: 0;
 font-size: 1.5em;
 }
 
@@ -52,4 +54,31 @@ width: 80%;
 
 .author-img img{
 width: 100%;
+}
+
+@media only screen and (max-width: 1920px) {
+  .post-specific-content p {
+    font-size: 1.1em;
+    }
+
+  .post-specific-content h2 {
+    font-size: 1.5em;
+}
+
+  .post-sidebar h2 {
+    font-size: 2em;
+  }
+
+  .post-sidebar h3 {
+    font-size: 1.5em;
+  }
+
+  .post-sidebar p {
+    font-size: 1.1em;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .post-sidebar h2 {
+font-size: 1.5em;
+  }
 }

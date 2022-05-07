@@ -59,6 +59,10 @@ border: solid 5px var(--border-color);
   }
 
   .post-content_box h2 {
-    font-size: 1.7em;
+    font-size: 1.4em;
+  }
+
+  .post-content_box {
+    font-size: 1.5em;
   }
 }

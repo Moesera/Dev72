@@ -1,0 +1,30 @@
+.container-wrapper {
+  display: flex;
+}
+
+.container-wrapper h2,
+h3 {
+  font-family: var(--main-font);
+  text-transform: uppercase;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-wrapper {
+  font-family: var(--main-font);
+}
+
+.about-wrapper p {
+  width: 30%;
+}
+
+.contact-info {
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+}
