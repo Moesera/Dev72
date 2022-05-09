@@ -16,9 +16,9 @@
     <a href="contact.html"><div class="nav-item contact">Contact</div></a>
     <a href="blog-posts.html"><div class="nav-item blog">Blog post's</div></a>
     <main>
-      <h1>Contact</h1>
       <div class="container-wrapper">
-        <div class="about-wrapper">
+        <section class="about-wrapper">
+          <h1>Contact</h1>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo, nemo amet quos inventore veniam id! Dolor error ex mollitia minus animi illo doloremque, laborum id molestiae eos delectus soluta placeat. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione nesciunt earum saepe
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed vitae, nobis reiciendis corporis tempora consequatur, distinctio laudantium maiores quisquam ipsum facilis qui labore, odit itaque! Quo laboriosam dicta enim adipisci. quam expedita ab, neque cumque accusamus quidem? Error a
@@ -30,29 +30,31 @@
             <h3>Email</h3>
             <p>Gemander@mailenso.com</p>
           </div>
-        </div>
-        <div class="form-wrapper">
-        <h2>Contact Form</h2>
-        <form id="contact-form" action="#" class="form-contact" method="GET">
-          <div class="input-container">
-            <label class="label-container">
-              (required)
-              <input type="text" name="name" placeholder="Name" required />
-            </label>
-            <label class="label-container">
-              (required)
-              <input type="email" name="email" placeholder="Email" required />
-            </label>
-            <label class="label-container">
-              (required)
-              <input type="text" name="subject" placeholder="Subject" required />
-            </label>
-            <label class="label-container">
-              (required)
-              <input type="textarea" name="message" placeholder="Message" required />
-            </label>
-          </div>
-        </form>
+        </section>
+        <section class="form-wrapper">
+          <h2>Contact Form</h2>
+          <form id="contact-form" action="#" class="form-contact" method="GET">
+            <div class="inputs-container">
+              <label class="label-container">
+                (required)
+                <input type="text" name="name" placeholder="Name" required />
+              </label>
+              <label class="label-container">
+                (required)
+                <input type="email" name="email" placeholder="Email" required />
+              </label>
+              <label class="label-container">
+                (required)
+                <input type="text" name="subject" placeholder="Subject" required />
+              </label>
+              <label for="message" class="label-container"></label>
+              <textarea id="message" name="message" rows="3" placeholder="Message" maxlength="500"></textarea>
+            </div>
+            <div class="btn-container">
+              <button id="send-msg" class="send-btn">Send message</button>
+            </div>
+          </form>
+        </section>
       </div>
       <script src="/js/script.js"></script>
     </main>

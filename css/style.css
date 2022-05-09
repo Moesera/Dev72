@@ -253,6 +253,7 @@ img {
 .cta a:hover::after {
   transform: scaleX(0);
 }
+
 /* popular and whats new section*/
 .filtered-container {
   display: flex;
