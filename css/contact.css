@@ -1,5 +1,5 @@
 main {
-  background-image: url("/images/background/StockSnap_UIN7XK6I94.jpg");
+  background-image: url("/images/background/Optimized/StockSnap_UIN7XK6I94.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -56,7 +56,7 @@ h1 + p {
   flex-direction: column;
   flex: 1;
   align-items: center;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.8);
   padding-bottom: 40px;
 }
 
