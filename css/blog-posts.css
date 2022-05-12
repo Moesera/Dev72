@@ -17,14 +17,15 @@
   font-size: 1.6em;
   width: 42%;
   margin-bottom: 5%;
-  background: var(--main-color);
+  background: black;
 }
 
 .post-content_box a {
   text-decoration: none;
 }
 
-.post-content_box  h2, p {
+.post-content_box h2,
+p {
   margin-left: 5%;
   margin-bottom: 0;
 }
@@ -44,14 +45,13 @@
 }
 
 .post-img {
-width: 100%;
-border: solid 5px var(--border-color);
+  width: 100%;
+  border: solid 5px var(--border-color);
 }
 
 @media only screen and (max-width: 1250px) {
   .post-container {
     width: 100%;
-
   }
 
   .post-content_box {
