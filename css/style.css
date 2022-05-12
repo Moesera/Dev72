@@ -8,8 +8,8 @@ html {
 body {
   margin: 0;
   display: grid;
-  grid-template-columns: 60px auto 60px;
-  grid-template-rows: 60px auto 10% 50px;
+  grid-template-columns: 50px auto 50px;
+  grid-template-rows: 51px auto 20% 50px;
   grid-template-areas:
     "home home home"
     "contact main about"
@@ -42,7 +42,7 @@ footer {
   align-items: center;
   font-family: var(--main-font);
   font-weight: var(--heading-text);
-  font-size: 1.7em;
+  font-size: 1.3em;
   padding: 10px;
 }
 
@@ -105,7 +105,7 @@ img {
 
 .page-header_txt {
   font-family: var(--header-font);
-  font-size: 6em;
+  font-size: 4.5em;
   margin: 2% 0 0 7%;
   text-transform: uppercase;
 }
@@ -135,8 +135,8 @@ img {
 /* Slider */
 
 .heading-txt {
-  font-size: 3em;
-  margin: 8% 0 5%;
+  font-size: 2.5em;
+  margin: 4% 0 5%;
   text-align: center;
   font-family: var(--header-font);
 }
@@ -145,7 +145,7 @@ img {
   display: flex;
   font-family: var(--main-font);
   margin-bottom: 100px;
-  font-size: 1.7em;
+  font-size: 1.2em;
 }
 
 .cards-container {
@@ -170,7 +170,7 @@ img {
 
 .blog-itm-box p {
   max-width: 600px;
-  width: 75%;
+  width: 85%;
   margin: 0 auto;
   padding: 10px 0px 10px;
 }
@@ -215,7 +215,7 @@ img {
   flex-direction: column;
   font-family: var(--main-font);
   text-transform: uppercase;
-  font-size: 1.8em;
+  font-size: 1.4em;
   width: 300px;
   height: 130px;
 }
@@ -292,7 +292,7 @@ img {
 
 .filtered-container h3 {
   font-family: var(--main-font);
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
 .content-box {
@@ -300,7 +300,7 @@ img {
   flex-direction: column;
   margin-top: 10%;
   font-family: var(--main-font);
-  padding: 15px;
+  padding: 15px 10px;
   border-radius: 5px;
   background: #212121;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 55px 55px, rgba(0, 0, 0, 0.12) 0px -15px 30px, rgba(0, 0, 0, 0.12) 0px 2px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -5px 5px;
@@ -310,12 +310,13 @@ img {
   background: var(--page-color);
 }
 .content-box h4 {
-  font-size: 2.5em;
+  font-size: 1.7em;
   margin: 0;
+  margin-bottom: 10px;
 }
 
 .content-box p {
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 .filtered-img {
@@ -323,11 +324,6 @@ img {
   box-sizing: border-box;
 }
 
-@media only screen and (min-width: 2100px) {
-  .page-header_txt {
-    font-size: 7em;
-  }
-}
 @media only screen and (max-width: 1900px) {
   .page-header_txt {
     font-size: 5em;
