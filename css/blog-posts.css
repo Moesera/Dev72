@@ -18,7 +18,7 @@
   width: 42%;
   margin-bottom: 5%;
   border-radius: 5px;
-  background: black;
+  background: #212121;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 55px 55px, rgba(0, 0, 0, 0.12) 0px -15px 30px, rgba(0, 0, 0, 0.12) 0px 2px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -5px 5px;
 }
 
@@ -38,6 +38,7 @@ p {
 
 .post-content_box h2 {
   font-size: 1.8em;
+  width: 91%;
 }
 
 .post-content_box p {
