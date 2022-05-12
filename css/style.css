@@ -156,7 +156,7 @@ img {
 
 .blog-itm-box {
   width: 18%;
-  background-color: var(--main-color);
+  background: black;
   display: flex;
   flex-direction: column;
   text-decoration: none;
@@ -295,7 +295,7 @@ img {
   margin-top: 10%;
   font-family: var(--main-font);
   padding: 15px;
-  background-color: var(--main-color);
+  background: black;
 }
 
 .content-box h4 {
