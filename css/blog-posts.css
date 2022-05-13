@@ -14,7 +14,6 @@
 
 .post-content_box {
   font-family: var(--main-font);
-  font-size: 1.2em;
   width: 42%;
   margin-bottom: 5%;
   border-radius: 5px;
@@ -38,12 +37,13 @@ p {
 
 .post-content_box h2 {
   font-size: 1.5em;
-  width: 91%;
+  width: 91.5%;
 }
 
 .post-content_box p {
   max-width: 90%;
   padding-bottom: 50px;
+  font-size: 1.2em;
 }
 
 .post-img_box {
@@ -56,7 +56,27 @@ p {
   border: solid 5px var(--border-color);
 }
 
-@media only screen and (max-width: 1250px) {
+@media only screen and (max-width: 1746px) {
+  .post-content_box h2 {
+    font-size: 1.3em;
+  }
+
+  .post-content_box p {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 1289px) {
+  .post-content_box h2 {
+    font-size: 1.1em;
+  }
+
+  .post-content_box p {
+    font-size: 0.9em;
+  }
+}
+
+@media only screen and (max-width: 1158px) {
   .post-container {
     width: 100%;
   }
@@ -66,10 +86,10 @@ p {
   }
 
   .post-content_box h2 {
-    font-size: 1.4em;
+    font-size: 1.3em;
   }
 
-  .post-content_box {
-    font-size: 1.5em;
+  .post-content_box p {
+    font-size: 1em;
   }
 }
