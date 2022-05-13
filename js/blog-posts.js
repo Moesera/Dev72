@@ -25,7 +25,7 @@ async function CreateHtmlBlogPage(blogPosts) {
                                 <a href="blog-specific.html?id=${blogPosts[i].id}">
                                 <h2>${blogPosts[i].title.rendered}</h2>
                                 <div class="post-img_box">
-                                <img class="post-img" src="${blogPosts[i].acf.featured_img}" />
+                                <img class="post-img" src="${blogPosts[i].acf.banner_img}" />
                                 </div>
                                 <p>${blogPosts[i].acf.description}</p>
                                 </a>
