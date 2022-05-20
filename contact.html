@@ -49,23 +49,24 @@
         </section>
         <section class="form-wrapper">
           <h2>Contact Form</h2>
-          <form id="contact-form" action="#" class="form-contact" method="GET">
+          <form id="contact-form" class="form-contact">
             <div class="inputs-container">
-              <label id="nameError" class="label-container" for="name">
-                <input type="text" id="name" name="name" placeholder="Name must be over 5 characters" required />
+              <label id="nameError" class="label-container" for="your-name">
+                <input type="text" id="your-name" name="your-name" placeholder="Name must be over 5 characters" required />
               </label>
-              <label id="emailError" class="label-container" for="email">
-                <input type="email" id="email" name="email" placeholder="Must be a valid email address" required />
+              <label id="emailError" class="label-container" for="your-email">
+                <input type="email" id="your-email" name="your-email" placeholder="Must be a valid email address" required />
               </label>
-              <label id="subjectError" class="label-container" for="subject">
-                <input type="text" id="subject" name="subject" placeholder="Subject must be over 15 characters" required />
+              <label id="subjectError" class="label-container" for="your-subject">
+                <input type="text" id="your-subject" name="your-subject" placeholder="Subject must be over 15 characters" required />
               </label>
-              <label id="messageError" for="message" class="label-container"></label>
-              <textarea id="message" name="message" rows="3" placeholder="Message must be over 25 characters" maxlength="500"></textarea>
+              <label id="messageError" for="your-message" class="label-container"></label>
+              <textarea id="your-message" name="your-message" rows="3" placeholder="Message must be over 25 characters" maxlength="500"></textarea>
             </div>
             <div class="btn-container">
-              <button id="send-msg" class="send-btn">Send message</button>
+              <button id="send-msg" class="send-btn">Submit</button>
             </div>
+            <div class="form-success"></div>
           </form>
         </section>
       </div>
