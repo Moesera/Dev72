@@ -78,13 +78,14 @@ h1 + p {
   display: flex;
   flex-direction: column;
   margin-bottom: 15px;
+  border-radius: 3px;
 }
 
 .label-container input {
   border: none;
   border-bottom: solid 2px white;
   color: white;
-  width: 99%;
+  max-width: 99%;
   height: 5vh;
   font-size: 1.2em;
   background: rgba(0, 0, 0, 0);
@@ -120,6 +121,19 @@ textarea {
 
 .send-btn:hover {
   background-color: black;
+}
+
+/* errors and success */
+
+.successMessage {
+  border-style: solid;
+  border-radius: 5px;
+  border-color: darkgreen;
+  background-color: lightgreen;
+  color: darkgreen;
+  margin: 0 auto;
+  max-width: 400px;
+  padding-left: 10px;
 }
 
 @media only screen and (max-width: 1560px) {

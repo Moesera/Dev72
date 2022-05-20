@@ -1,5 +1,5 @@
 // API url
-const apiUrl = "https://landson.site/thefunction/wp-json/wp/v2/posts?acf_format=standard";
+const apiUrl = "https://landson.site/thefunction/wp-json/wp/v2/posts?acf_format=standard&per_page=20";
 
 // html elements
 const postContainer = document.querySelector(".post-container");

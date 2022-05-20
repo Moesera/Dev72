@@ -1,3 +1,14 @@
+// HTML element targets
+const carouselContainer = document.querySelector(".cards-container");
+const popularPostContainer = document.querySelector(".popular-content_wrapper");
+const newPostContainer = document.querySelector(".new-content_wrapper");
+const carouselRight = document.querySelector(".fa-caret-right");
+const carouselLeft = document.querySelector(".fa-caret-left");
+
+// Carousel items
+let sliderPerPage = 4;
+let currentPage = 0;
+
 // Url addons to fetches
 const popularPostsId = 3;
 const newPostsId = 4;
@@ -5,21 +16,35 @@ const getCategory = "&categories=";
 const urlEmbed = "&_embed";
 
 // Url fetches
-const apiUrl = "https://landson.site/thefunction/wp-json/wp/v2/posts?acf_format=standard";
+const apiUrl = "https://landson.site/thefunction/wp-json/wp/v2/posts?acf_format=standard&per_page=20";
 const categoryUrl = apiUrl + urlEmbed + getCategory;
-
-// HTML element targets
-const carouselContainer = document.querySelector(".cards-container");
-const popularPostContainer = document.querySelector(".popular-content_wrapper");
-const newPostContainer = document.querySelector(".new-content_wrapper");
 
 async function fetchApi() {
   try {
     const response = await fetch(apiUrl);
     const data = await response.json();
 
+    let page = Math.ceil(data.length / sliderPerPage - 1);
+    console.log(page);
+
+    carouselRight.addEventListener("click", () => {
+      if (currentPage === page) {
+        carouselRight.disabled;
+      } else {
+        currentPage += 1;
+        createCarousel(data);
+      }
+    });
+    carouselLeft.addEventListener("click", () => {
+      if (currentPage === -0) {
+        carouselLeft.disabled;
+      } else {
+        currentPage -= 1;
+        createCarousel(data);
+      }
+    });
+
     createCarousel(data);
-    console.log(data);
   } catch (error) {
     console.warn(error);
   }
@@ -27,13 +52,23 @@ async function fetchApi() {
 
 fetchApi();
 
+function paginated(data) {}
+
 async function createCarousel(data) {
-  for (let i = 0; i < data.length; i++) {
-    carouselContainer.innerHTML += `<a href="blog-specific.html?id=${data.id}" class="blog-itm-box">
-                          <h3 class="h3-section_heading" >${data[i].title.rendered}</h3>
-                          <p>${data[i].acf.description}</p>
+  carouselContainer.innerHTML = "";
+
+  let beginning = sliderPerPage * currentPage;
+  let end = beginning + sliderPerPage;
+  let paginatedItems = data.slice(beginning, end);
+
+  for (let i = 0; i < paginatedItems.length; i++) {
+    let carouselItems = paginatedItems[i];
+    console.log(carouselItems);
+    carouselContainer.innerHTML += `<a href="blog-specific.html?id=${carouselItems.id}" class="blog-itm-box">
+                          <h3 class="h3-section_heading" >${carouselItems.title.rendered}</h3>
+                          <p>${carouselItems.acf.description}</p>
                           <div class="slider-img_box">
-                          <img class="slider-img" src="${data[i].acf.featured_img}" />
+                          <img class="slider-img" src="${carouselItems.acf.featured_img}" />
                           </div>
                           </a>`;
   }
@@ -44,8 +79,6 @@ async function fetchPopularPosts() {
   try {
     const response = await fetch(categoryUrl + popularPostsId);
     const category = await response.json();
-
-    console.log(category);
 
     for (let i = 0; i < category.length; i++) {
       popularPostContainer.innerHTML += `<a href="blog-specific.html?id=${category.id}" class="content-box">
@@ -68,7 +101,6 @@ async function fetchNewPosts() {
     const response = await fetch(categoryUrl + newPostsId);
     const category = await response.json();
 
-    console.log(category);
     for (let i = 0; i < category.length; i++) {
       newPostContainer.innerHTML += `<a href="blog-specific.html?id=${category.id}" class="content-box">
                                 <h4>${category[i].title.rendered}</h4>

@@ -51,21 +51,17 @@
           <h2>Contact Form</h2>
           <form id="contact-form" action="#" class="form-contact" method="GET">
             <div class="inputs-container">
-              <label class="label-container">
-                Must be 6 characters or longer
-                <input type="text" name="name" placeholder="Name" required />
+              <label id="nameError" class="label-container" for="name">
+                <input type="text" id="name" name="name" placeholder="Name must be over 5 characters" required />
               </label>
-              <label class="label-container">
-                Must be valid email
-                <input type="email" name="email" placeholder="Email" required />
+              <label id="emailError" class="label-container" for="email">
+                <input type="email" id="email" name="email" placeholder="Must be a valid email address" required />
               </label>
-              <label class="label-container">
-                Must be 16 characters or longer
-                <input type="text" name="subject" placeholder="Subject" required />
+              <label id="subjectError" class="label-container" for="subject">
+                <input type="text" id="subject" name="subject" placeholder="Subject must be over 15 characters" required />
               </label>
-              <label for="message" class="label-container"></label>
-              Must be 26 characters or longer
-              <textarea id="message" name="message" rows="3" placeholder="Message" maxlength="500"></textarea>
+              <label id="messageError" for="message" class="label-container"></label>
+              <textarea id="message" name="message" rows="3" placeholder="Message must be over 25 characters" maxlength="500"></textarea>
             </div>
             <div class="btn-container">
               <button id="send-msg" class="send-btn">Send message</button>
@@ -73,7 +69,7 @@
           </form>
         </section>
       </div>
-      <script src="/js/script.js"></script>
+      <script src="/js/contact.js"></script>
     </main>
     <footer>&copy; Tony Erlandsen</footer>
   </body>
