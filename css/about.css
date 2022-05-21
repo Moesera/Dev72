@@ -1,5 +1,5 @@
 main {
-  background-image: url("/images/background/Optimized/alberta-g4f7f39df0_1920.jpg");
+  background-image: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)), url("/images/background/Optimized/alberta-g4f7f39df0_1920.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

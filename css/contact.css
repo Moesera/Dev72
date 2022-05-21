@@ -1,5 +1,5 @@
 main {
-  background-image: url("/images/background/Optimized/StockSnap_UIN7XK6I94.jpg");
+  background-image: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)), url("/images/background/Optimized/StockSnap_UIN7XK6I94.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -99,6 +99,7 @@ textarea {
   border: solid 2px white;
   max-width: 860px;
   max-height: 300px;
+  resize: none;
 }
 
 /* button */

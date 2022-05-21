@@ -1,7 +1,7 @@
 .h3-section_heading {
   text-align: center;
   font-family: var(--main-font);
-  margin: 3% 3%;
+  margin: 3% 0%;
 }
 
 /* Hero image */
@@ -95,6 +95,7 @@
 .fa-caret-left:hover {
   color: var(--main-color);
 }
+
 /* popular and whats new section*/
 .filtered-container {
   display: flex;

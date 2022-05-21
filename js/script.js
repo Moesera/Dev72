@@ -52,8 +52,6 @@ async function fetchApi() {
 
 fetchApi();
 
-function paginated(data) {}
-
 async function createCarousel(data) {
   carouselContainer.innerHTML = "";
 
@@ -66,7 +64,6 @@ async function createCarousel(data) {
     console.log(carouselItems);
     carouselContainer.innerHTML += `<a href="blog-specific.html?id=${carouselItems.id}" class="blog-itm-box">
                           <h3 class="h3-section_heading" >${carouselItems.title.rendered}</h3>
-                          <p>${carouselItems.acf.description}</p>
                           <div class="slider-img_box">
                           <img class="slider-img" src="${carouselItems.acf.featured_img}" />
                           </div>
