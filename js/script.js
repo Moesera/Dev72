@@ -63,7 +63,7 @@ async function createCarousel(data) {
     let carouselItems = paginatedItems[i];
     console.log(carouselItems);
     carouselContainer.innerHTML += `<a href="blog-specific.html?id=${carouselItems.id}" class="blog-itm-box">
-                          <h3 class="h3-section_heading" >${carouselItems.title.rendered}</h3>
+                          <h3>${carouselItems.title.rendered}</h3>
                           <div class="slider-img_box">
                           <img class="slider-img" src="${carouselItems.acf.featured_img}" />
                           </div>

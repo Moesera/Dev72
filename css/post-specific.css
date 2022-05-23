@@ -1,3 +1,8 @@
+h1 {
+  font-size: 5vw;
+  font-family: var(--header-font);
+}
+
 .specific-post_wrapper {
   margin-top: 5%;
   font-family: var(--main-font);
@@ -6,7 +11,7 @@
 }
 
 .post-specific-content {
-  max-width: 51.9%;
+  max-width: 60%;
   padding-top: 2%;
   font-family: var(--main-font);
   display: flex;
@@ -16,7 +21,7 @@
 }
 
 .post-header_img {
-  width: 90%;
+  width: 95%;
   align-self: center;
 }
 
@@ -25,14 +30,14 @@
 }
 
 .post-specific-content h2 {
-  font-size: 2em;
+  font-size: 1.8vw;
   margin-bottom: 0;
   margin-left: 5%;
 }
 
 .post-specific-content p {
   max-width: 90%;
-  font-size: 1.5em;
+  font-size: 1.2vw;
 }
 
 .content_text-box {
@@ -44,7 +49,7 @@
 }
 
 .post-sidebar {
-  width: 20%;
+  width: 23%;
   padding-top: 1.5%;
   display: flex;
   flex-direction: column;
@@ -53,13 +58,13 @@
 }
 
 .post-sidebar h2 {
-  font-size: 3em;
+  font-size: 2vw;
   margin: 0;
   margin-left: 9%;
 }
 
 .post-sidebar h3 {
-  font-size: 2em;
+  font-size: 1.4vw;
   margin-bottom: 0;
   margin-left: 10%;
 }
@@ -74,14 +79,14 @@
 }
 
 .post-sidebar p {
-  font-size: 1.6em;
+  font-size: 1.2vw;
   margin-top: 0;
   align-self: center;
   width: 80%;
 }
 
 @media only screen and (max-width: 1920px) {
-  .post-specific-content p {
+  /* .post-specific-content p {
     font-size: 1.1em;
   }
 
@@ -99,10 +104,10 @@
 
   .post-sidebar p {
     font-size: 1.1em;
-  }
+  } */
 }
 @media only screen and (max-width: 1280px) {
-  .post-sidebar h2 {
+  /* .post-sidebar h2 {
     font-size: 1.5em;
-  }
+  } */
 }
