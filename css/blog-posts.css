@@ -88,3 +88,17 @@ p {
     font-size: 1.8vw;
   }
 }
+
+@media only screen and (max-width: 650px) {
+  h1 {
+    font-size: 5.7vw;
+  }
+
+  .post-content_box h2 {
+    font-size: 1.1em;
+  }
+
+  .post-content_box p {
+    font-size: 0.9em;
+  }
+}
