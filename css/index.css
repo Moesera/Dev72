@@ -138,6 +138,10 @@
     font-size: 1vw;
   }
 
+  .new-content_wrapper {
+    padding: 10% 8%;
+  }
+
   .filtered-container {
     flex-wrap: wrap;
   }
@@ -147,11 +151,11 @@
   }
 
   .content-box h4 {
-    font-size: 2.3vw;
+    font-size: 2.6vw;
   }
 
   .content-box p {
-    font-size: 1.8vw;
+    font-size: 2vw;
   }
 
   .fa-caret-left {
