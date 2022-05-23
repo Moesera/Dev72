@@ -59,7 +59,7 @@ p {
 
 .post-img {
   width: 100%;
-  border: solid 5px var(--border-color);
+  border: solid 2px var(--border-color);
 }
 
 /* hide element */
