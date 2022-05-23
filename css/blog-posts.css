@@ -71,6 +71,9 @@ p {
   h1 {
     font-size: 4.8vw;
   }
+  .container-wrapper {
+    margin-top: 15%;
+  }
 
   .post-container {
     width: 100%;
