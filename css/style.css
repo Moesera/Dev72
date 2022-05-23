@@ -305,7 +305,11 @@ img {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
+  .homepage-header_txt {
+    font-size: 6.7vw;
+  }
+
   .cta {
     font-size: 1em;
     width: 250px;

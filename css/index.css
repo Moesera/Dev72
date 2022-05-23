@@ -169,9 +169,9 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
   .heading-txt {
-    font-size: 1.8em;
+    font-size: 1.5em;
   }
 
   .content-box h4 {
@@ -179,6 +179,6 @@
   }
 
   .content-box p {
-    font-size: 1.2em;
+    font-size: 0.9em;
   }
 }
