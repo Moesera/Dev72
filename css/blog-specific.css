@@ -2,6 +2,7 @@ h1 {
   font-size: 4.5vw;
   font-family: var(--header-font);
   margin-left: 4%;
+  width: 60%;
 }
 
 .specific-post_wrapper {
@@ -44,6 +45,7 @@ h1 {
 
 .content_text-box {
   margin-top: 1%;
+  margin-bottom: 3%;
 }
 
 .content_text-box p {
@@ -98,6 +100,9 @@ h1 {
 }
 
 @media only screen and (max-width: 1100px) {
+  h1 {
+    width: 93.5%;
+  }
   .post-specific-content {
     max-width: 95%;
   }
