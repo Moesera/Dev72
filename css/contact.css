@@ -7,12 +7,12 @@ main {
 
 .container-wrapper {
   display: flex;
-  margin-top: 3.5%;
+  margin-top: 2%;
   justify-content: space-evenly;
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 3vw;
   margin-bottom: 0;
   margin-top: 30px;
 }
@@ -35,7 +35,10 @@ h1 + p {
   align-items: center;
   display: flex;
   flex-direction: column;
-  font-size: 1.2em;
+}
+
+.about-wrapper p {
+  font-size: 1vw;
 }
 
 .contact-info {
@@ -64,8 +67,9 @@ h1 + p {
 }
 
 .form-wrapper h2 {
-  font-size: 2.5em;
-  margin-bottom: 3%;
+  font-size: 3vw;
+  margin-bottom: 5%;
+  margin-top: 5%;
 }
 
 .inputs-container {
@@ -77,7 +81,7 @@ h1 + p {
 .label-container {
   display: flex;
   flex-direction: column;
-  margin-bottom: 15px;
+  margin-bottom: 4%;
   border-radius: 3px;
 }
 
@@ -85,20 +89,17 @@ h1 + p {
   border: none;
   border-bottom: solid 2px white;
   color: white;
-  max-width: 99%;
   height: 5vh;
-  font-size: 1.2em;
+  font-size: 1vw;
   background: rgba(0, 0, 0, 0);
 }
 
 textarea {
-  font-size: 1.2em;
+  font-size: 1vw;
   font-family: var(--main-font);
   background: rgba(0, 0, 0, 0);
   color: white;
   border: solid 2px white;
-  max-width: 860px;
-  max-height: 300px;
   resize: none;
 }
 
@@ -113,9 +114,9 @@ textarea {
   border: 2px solid white;
   color: white;
   background: rgba(0, 0, 0, 0.4);
-  padding: 15px 10vw;
+  padding: 3% 9vw;
   font-family: var(--main-font);
-  font-size: 1.2em;
+  font-size: 1vw;
   font-weight: var(--heading-text);
   cursor: pointer;
 }
@@ -138,84 +139,100 @@ textarea {
   font-family: var(--main-font);
 }
 
-@media only screen and (max-width: 1560px) {
-  .about-wrapper {
-    font-size: 1em;
-    padding-bottom: 55px;
-  }
-
-  .label-container input {
-    font-size: 1em;
-  }
-
-  textarea {
-    font-size: 1em;
-  }
-
-  .send-btn {
-    font-size: 1em;
-  }
-}
-
-@media only screen and (max-width: 1280px) {
-  h1 {
-    margin-top: 26px;
-  }
-
-  .label-container input {
-    font-size: 1em;
-  }
-
-  textarea {
-    font-size: 1em;
-  }
-
-  .send-btn {
-    font-size: 1em;
-  }
-}
-
-@media only screen and (max-width: 1164px) {
+@media only screen and (max-width: 1400px) {
   h1 + p {
-    width: 72%;
+    width: 80%;
   }
 
-  .about-wrapper {
-    width: 50%;
+  .form-wrapper {
+    padding-bottom: 10%;
   }
 
-  .form-wrapper h2 {
-    margin-bottom: 10%;
+  .about-wrapper p {
+    font-size: 1.3vw;
+  }
+
+  .label-container input {
+    font-size: 1.3vw;
+  }
+
+  textarea {
+    font-size: 1.3vw;
+  }
+
+  .send-btn {
+    font-size: 1.3vw;
   }
 }
 
-@media only screen and (max-width: 1030px) {
+@media only screen and (max-width: 1100px) {
   .container-wrapper {
     flex-direction: column;
   }
 
   .about-wrapper {
     width: 100%;
+    margin-bottom: 5%;
   }
 
-  h1 + p {
-    width: 55%;
+  .about-wrapper p {
+    font-size: 1.6vw;
   }
-
   .form-wrapper {
     width: 100%;
   }
 
-  .form-wrapper h2 {
-    margin-bottom: 0;
+  .label-container input {
+    font-size: 1.6vw;
+  }
+
+  textarea {
+    font-size: 1.6vw;
+  }
+
+  .send-btn {
+    font-size: 1.6vw;
   }
 
   main {
     padding-bottom: 0%;
   }
 
-  .contact-info {
-    background: rgba(0, 0, 0, 0.8);
-    padding: 5px 5%;
+  .contact-info > h3 {
+    font-size: 1.8vw;
+  }
+
+  form {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  h1 {
+    font-size: 5vw;
+  }
+
+  .about-wrapper p {
+    font-size: 2.5vw;
+  }
+
+  .contact-info > h3 {
+    font-size: 3.2vw;
+  }
+
+  .form-wrapper h2 {
+    font-size: 5vw;
+  }
+
+  .label-container input {
+    font-size: 2.5vw;
+  }
+
+  textarea {
+    font-size: 2.5vw;
+  }
+
+  .send-btn {
+    font-size: 2.5vw;
   }
 }
