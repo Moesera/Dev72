@@ -6,7 +6,14 @@ main {
 }
 
 h1 {
-  margin-bottom: 50px;
+  margin-bottom: 2%;
+  font-size: 4vw;
+  font-family: var(--header-font);
+  margin-left: 5%;
+}
+
+span {
+  text-decoration: underline;
 }
 
 .page-header_txt {
@@ -19,13 +26,31 @@ h1 {
   max-width: 55%;
   margin: 0 auto;
   font-family: var(--main-font);
-  font-size: 1.2em;
+  font-size: 1.2vw;
 }
 
 .about-us_box p {
   padding: 15px 20px;
 }
 
-span {
-  text-decoration: underline;
+@media only screen and (max-width: 1250px) {
+  .about-us_box {
+    font-size: 1.5vw;
+    max-width: 86.5%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  h1 {
+    font-size: 2.3em;
+    margin-bottom: 5%;
+  }
+
+  .about-us_box {
+    font-size: 1em;
+  }
+
+  .about-us_box p {
+    padding: 15px 0px;
+  }
 }

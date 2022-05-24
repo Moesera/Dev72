@@ -242,7 +242,7 @@ img {
 @media only screen and (max-width: 750px) {
   body {
     grid-template-columns: auto auto auto auto;
-    grid-template-rows: 50px auto 20%;
+    grid-template-rows: 50px auto 100%;
     grid-template-areas:
       "home blog contact about"
       "main main main main"
