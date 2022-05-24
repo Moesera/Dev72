@@ -4,7 +4,7 @@ const id = new URLSearchParams(queryString).get("id");
 
 //HTML elements
 const specificContainer = document.querySelector(".post-specific-content");
-const pageHeaderTxt = document.querySelector(".page-header_txt");
+const pageHeaderTxt = document.querySelector("h1");
 const aboutContainer = document.querySelector(".post-sidebar");
 const pageTitle = document.querySelector("title");
 
