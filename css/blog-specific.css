@@ -124,7 +124,7 @@ h1 {
   .author-img {
     width: 30%;
     align-self: center;
-    flex-basis: 60%;
+    flex-basis: 69%;
   }
 
   .author-content {
@@ -152,7 +152,7 @@ h1 {
   }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 800px) {
   h1 {
     font-size: 1.7em;
   }
@@ -165,7 +165,7 @@ h1 {
     font-size: 0.8em;
   }
   .author-img {
-    flex-basis: 80%;
+    flex-basis: 100%;
   }
 
   .post-sidebar h2 {
@@ -176,9 +176,11 @@ h1 {
 
   .post-sidebar h3 {
     font-size: 2.4vw;
+    margin-left: 10%;
   }
 
   .post-sidebar p {
     font-size: 2.4vw;
+    margin-left: 10%;
   }
 }
