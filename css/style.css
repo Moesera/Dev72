@@ -46,9 +46,7 @@ footer {
   padding: 10px;
 }
 
-.nav-item a {
-  width: 100%;
-  color: var(--text-color);
+.nav-a {
   text-decoration: none;
 }
 
@@ -252,9 +250,6 @@ img {
 
   main {
     grid-area: main;
-    /* background-color: var(--page-color);
-    color: var(--text-color);
-    padding-bottom: 10%; */
   }
 
   .home {
@@ -296,16 +291,13 @@ img {
   }
 
   .nav-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: -webkit-fill-available;
     padding: unset;
     font-size: 2.9vw;
   }
 
   .nav-item:hover {
-    font-size: 1.2em;
+    font-size: 1em;
   }
 }
 
