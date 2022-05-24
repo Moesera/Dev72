@@ -78,7 +78,7 @@ async function fetchPopularPosts() {
     const category = await response.json();
 
     for (let i = 0; i < category.length; i++) {
-      popularPostContainer.innerHTML += `<a href="blog-specific.html?id=${category.id}" class="content-box">
+      popularPostContainer.innerHTML += `<a href="blog-specific.html?id=${category[i].id}" class="content-box">
                                     <h4>${category[i].title.rendered}</h4>
                                     <div class="filtered-img_box">
                                     <img class="filtered-img" src="${category[i].acf.banner_img}" />
@@ -99,7 +99,7 @@ async function fetchNewPosts() {
     const category = await response.json();
 
     for (let i = 0; i < category.length; i++) {
-      newPostContainer.innerHTML += `<a href="blog-specific.html?id=${category.id}" class="content-box">
+      newPostContainer.innerHTML += `<a href="blog-specific.html?id=${category[i].id}" class="content-box">
                                 <h4>${category[i].title.rendered}</h4>
                                 <div class="filtered-img_box">
                                 <img class="filtered-img" src="${category[i].acf.banner_img}" />

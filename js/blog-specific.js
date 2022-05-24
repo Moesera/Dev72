@@ -37,12 +37,16 @@ async function createHtml(blogDetails) {
                                     </div>
                                     <div class="content_text-box">${blogDetails.acf.content}</div>`;
 
-  aboutContainer.innerHTML = `<h2>${blogDetails.acf.author_name}</h2>
+  aboutContainer.innerHTML = `<div class="author-name_img">
+                              <h2>${blogDetails.acf.author_name}</h2>
                               <div class="author-img">
                               <img class="open_modal" data-open="imgModal" src="${blogDetails.acf.author_img}" />
                               </div>
+                              </div>
+                              <div class="author-content">
                               <h3>About</h3>
-                              <p>${blogDetails.acf.about_author}</p>`;
+                              <p>${blogDetails.acf.about_author}</p>
+                              </div>`;
 }
 
 // popup modal feature inspired from https://webdesign.tutsplus.com/tutorials/how-to-build-flexible-modal-dialogs-with-html-css-and-javascript--cms-33500
