@@ -35,21 +35,18 @@ h1 {
 .post-specific-content h2 {
   font-size: 1.8vw;
   margin-bottom: 0;
-  margin-left: 5%;
+  margin-left: 3%;
 }
 
 .post-specific-content p {
-  max-width: 90%;
+  max-width: 94%;
   font-size: 1.2vw;
+  margin: 0 auto;
 }
 
 .content_text-box {
   margin-top: 1%;
   margin-bottom: 3%;
-}
-
-.content_text-box p {
-  margin: 0 auto;
 }
 
 .post-sidebar {
