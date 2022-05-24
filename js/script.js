@@ -37,7 +37,7 @@ async function fetchApi() {
     });
     carouselLeft.addEventListener("click", () => {
       if (currentPage === -0) {
-        carouselLeft.disabled;
+        carouselLeft.classList.add("hidden");
       } else {
         currentPage -= 1;
         createCarousel(data);
