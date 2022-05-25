@@ -56,7 +56,7 @@ function createContainerPosts(firstArray, secondArray) {
                                     <a href="blog-specific.html?id=${firstArray[i].id}">
                                     <h2>${firstArray[i].title.rendered}</h2>
                                     <div class="post-img_box">
-                                    <img class="post-img" src="${firstArray[i].acf.banner_img}" />
+                                    <img class="post-img" src="${firstArray[i].acf.banner_img.url}" alt="${firstArray[i].acf.banner_img.name}" />
                                     </div>
                                     <p>${firstArray[i].acf.description}</p>
                                     </a>
@@ -68,7 +68,7 @@ function createContainerPosts(firstArray, secondArray) {
     <a href="blog-specific.html?id=${secondArray[j].id}">
     <h2>${secondArray[j].title.rendered}</h2>
     <div class="post-img_box">
-    <img class="post-img" src="${secondArray[j].acf.banner_img}" />
+    <img class="post-img" src="${secondArray[j].acf.banner_img.url}" alt="${secondArray[j].acf.banner_img.name}"/>
     </div>
     <p>${secondArray[j].acf.description}</p>
     </a>
