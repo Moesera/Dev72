@@ -42,7 +42,7 @@ async function createHtml(blogDetails) {
   aboutContainer.innerHTML = `<div class="author-name_img">
                               <h2>${blogDetails.acf.author_name}</h2>
                               <div class="author-img">
-                              <img data-open="imgModal" src="${blogDetails.acf.author_img}" />
+                              <img data-open="imgModal" src="${blogDetails.acf.author_img.url}" alt="${blogDetails.acf.author_img.name}"/>
                               </div>
                               </div>
                               <div class="author-content">
