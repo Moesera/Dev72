@@ -23,7 +23,6 @@ async function fetchDetails() {
     }
 
     createHtml(data);
-    // makeModalContent(data);
   } catch (error) {
     console.log("error" + error);
   }
@@ -36,50 +35,49 @@ async function createHtml(blogDetails) {
   pageTitle.innerText = "TheFunction | " + blogDetails.title.rendered;
 
   specificContainer.innerHTML += `<div class="post-header_img">
-                                    <img class="open_modal" data-open="imgModal" src="${blogDetails.acf.banner_img.url}" alt="${blogDetails.acf.banner_img.name}" />
+                                    <img data-open="imgModal" src="${blogDetails.acf.banner_img.url}" alt="${blogDetails.acf.banner_img.name}" />
                                     </div>
                                     <div class="content_text-box">${blogDetails.acf.content}</div>`;
 
   aboutContainer.innerHTML = `<div class="author-name_img">
                               <h2>${blogDetails.acf.author_name}</h2>
                               <div class="author-img">
-                              <img class="open_modal" data-open="imgModal" src="${blogDetails.acf.author_img}" />
+                              <img data-open="imgModal" src="${blogDetails.acf.author_img}" />
                               </div>
                               </div>
                               <div class="author-content">
                               <h3>About</h3>
                               <p>${blogDetails.acf.about_author}</p>
                               </div>`;
-}
 
-// popup modal feature inspired from https://webdesign.tutsplus.com/tutorials/how-to-build-flexible-modal-dialogs-with-html-css-and-javascript--cms-33500
+  // popup modal feature inspired from https://webdesign.tutsplus.com/tutorials/how-to-build-flexible-modal-dialogs-with-html-css-and-javascript--cms-33500
 
-// Modal HTML elements
-const modalContentContainer = document.querySelector(".modal_content");
-const openModal = document.querySelectorAll("[data-open]");
+  // Modal HTML elements
+  const modalContentContainer = document.querySelector(".modal_content");
+  const openModal = document.querySelectorAll("[data-open]");
 
-// make modal elements in module container
-// function makeModalContent(modalImage) {
-//   modalContentContainer.innerHTML += `<img data-open="imgModal" src="${modalImage.acf.banner_img}">`;
-// }
+  openModal.forEach((element) => {
+    element.addEventListener("click", () => {
+      const modalId = element.dataset.open;
+      modalContentContainer;
+      modalContentContainer.innerHTML = element.outerHTML;
 
-// event listener for when target is clicked and module should open.
-for (const element of openModal) {
-  element.addEventListener("click", function () {
-    const modalId = this.dataset.open;
-    document.getElementById(modalId).classList.add("modal-visible");
+      document.getElementById(modalId).classList.add("modal-visible");
+    });
+  });
+
+  // event listener for when target is clicked and module should open.
+
+  // Popup close
+  document.addEventListener("click", (evnt) => {
+    if (evnt.target === document.querySelector(".popup_modal.modal-visible")) {
+      document.querySelector("popup_modal").classList.remove(".modal-visible");
+    }
+  });
+  // exit modal with exit
+  document.addEventListener("keyup", (evnt) => {
+    if (evnt.key === "Escape" && document.querySelector(".popup_modal.modal-visible")) {
+      document.querySelector("popup_modal").classList.remove(".modal-visible");
+    }
   });
 }
-
-// Popup close
-document.addEventListener("click", (evnt) => {
-  if (evnt.target === document.querySelector(".popup_modal.modal-visible")) {
-    document.querySelector("modal.visible").classList.remove(".modal-visible");
-  }
-});
-
-document.addEventListener("keyup", (evnt) => {
-  if (evnt.key === "Escape" && document.querySelector(".popup_modal.modal-visible")) {
-    document.querySelector("popup_modal.modal-visible").classList.remove(".modal-visible");
-  }
-});

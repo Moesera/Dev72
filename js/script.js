@@ -81,7 +81,7 @@ async function fetchPopularPosts() {
       popularPostContainer.innerHTML += `<a href="blog-specific.html?id=${category[i].id}" class="content-box">
                                     <h4>${category[i].title.rendered}</h4>
                                     <div class="filtered-img_box">
-                                    <img class="filtered-img" src="${category[i].acf.banner_img}" />
+                                    <img class="filtered-img" src="${category[i].acf.banner_img.url}" alt="${category[i].acf.banner_img.name}" />
                                     </div>
                                     <p>${category[i].acf.description}</p>
                                     </a>`;
@@ -102,7 +102,7 @@ async function fetchNewPosts() {
       newPostContainer.innerHTML += `<a href="blog-specific.html?id=${category[i].id}" class="content-box">
                                 <h4>${category[i].title.rendered}</h4>
                                 <div class="filtered-img_box">
-                                <img class="filtered-img" src="${category[i].acf.banner_img}" />
+                                <img class="filtered-img" src="${category[i].acf.banner_img.url}" alt="${category[i].acf.banner_img.name}" />
                                 </div>
                                 <p>${category[i].acf.description}</p>
                                 </a>`;
