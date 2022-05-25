@@ -65,7 +65,7 @@ async function createCarousel(data) {
     carouselContainer.innerHTML += `<a href="blog-specific.html?id=${carouselItems.id}" class="blog-itm-box">
                           <h3>${carouselItems.title.rendered}</h3>
                           <div class="slider-img_box">
-                          <img class="slider-img" src="${carouselItems.acf.featured_img}" />
+                          <img class="slider-img" src="${carouselItems.acf.featured_img}" alt=""/>
                           </div>
                           </a>`;
   }

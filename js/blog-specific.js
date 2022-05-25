@@ -16,9 +16,12 @@ async function fetchDetails() {
   try {
     const response = await fetch(apiUrl);
     const data = await response.json();
+    console.log(data);
+
     if (!data) {
       throw new error(error);
     }
+
     createHtml(data);
     // makeModalContent(data);
   } catch (error) {
@@ -33,7 +36,7 @@ async function createHtml(blogDetails) {
   pageTitle.innerText = "TheFunction | " + blogDetails.title.rendered;
 
   specificContainer.innerHTML += `<div class="post-header_img">
-                                    <img class="open_modal" data-open="imgModal" src="${blogDetails.acf.banner_img}" />
+                                    <img class="open_modal" data-open="imgModal" src="${blogDetails.acf.banner_img.url}" alt="${blogDetails.acf.banner_img.name}" />
                                     </div>
                                     <div class="content_text-box">${blogDetails.acf.content}</div>`;
 
