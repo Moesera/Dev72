@@ -10,10 +10,9 @@ async function fetchApi() {
     const response = await fetch(apiUrl);
     const result = await response.json();
 
-    let clicks = 0;
     let chunks = [];
 
-    for (i = 0; i < result.length; i += clicks) {
+    for (i = 0; i < result.length; i += 0) {
       chunks.push(result.splice(0, 10));
     }
 
@@ -25,6 +24,7 @@ async function fetchApi() {
 
 fetchApi();
 
+// Creating chunks out of the fetch result.
 function add(chunks) {
   const parentContainer = document.querySelector(".container-wrapper");
 

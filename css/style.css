@@ -214,6 +214,7 @@ img {
   border: 2px solid var(--text-color);
   color: var(--text-color);
   letter-spacing: 2px;
+  cursor: pointer;
 }
 
 .cta span {
@@ -253,6 +254,14 @@ img {
   transform: scaleX(0);
 }
 
+/* hide element */
+.hide-element {
+  display: none;
+}
+
+.hidden {
+  visibility: hidden;
+}
 @media only screen and (max-width: 1100px) {
   .heading-txt {
     font-size: 3.7vw;
@@ -260,7 +269,7 @@ img {
   }
 
   .cta {
-    font-size: 1.7vw;
+    font-size: 1.5vw;
   }
 
   .cta a {

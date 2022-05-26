@@ -1,12 +1,11 @@
 // HTML element targets
-const carouselContainer = document.querySelector(".cards-container");
+const carouselContainer = document.querySelector("#main-slider");
 const popularPostContainer = document.querySelector(".popular-content_wrapper");
 const newPostContainer = document.querySelector(".new-content_wrapper");
-const carouselRight = document.querySelector(".fa-caret-right");
-const carouselLeft = document.querySelector(".fa-caret-left");
+const carouselRight = document.querySelector("#carousel-next");
+const carouselLeft = document.querySelector("#carousel-prev");
 
 // Carousel items
-let sliderPerPage = 4;
 let currentPage = 0;
 
 // Url addons to fetches
@@ -19,31 +18,29 @@ const urlEmbed = "&_embed";
 const apiUrl = "https://landson.site/thefunction/wp-json/wp/v2/posts?acf_format=standard&per_page=20";
 const categoryUrl = apiUrl + urlEmbed + getCategory;
 
+let sliderPerPage = 4;
 async function fetchApi() {
   try {
     const response = await fetch(apiUrl);
     const data = await response.json();
 
-    let page = Math.ceil(data.length / sliderPerPage - 1);
-    console.log(page);
+    // // Checking when screen size changes.
+    // window.addEventListener("resize", () => {
+    //   if (window.matchMedia("(min-width: 1100px)").matches) {
+    //     createCarousel(data, 4);
+    //   } else {
+    //     createCarousel(data, 2);
+    //   }
+    // });
 
-    carouselRight.addEventListener("click", () => {
-      if (currentPage === page) {
-        carouselRight.disabled;
-      } else {
-        currentPage += 1;
-        createCarousel(data);
-      }
-    });
-    carouselLeft.addEventListener("click", () => {
-      if (currentPage === -0) {
-        carouselLeft.classList.add("hidden");
-      } else {
-        currentPage -= 1;
-        createCarousel(data);
-      }
-    });
+    // //Getting size of the screen at the moment on load.
+    // let sliderPerPage = checkScreenWidth();
 
+    // // Carousel arrows hide or show.
+    // let page = Math.ceil(data.length / sliderPerPage - 1);
+    // console.log(page);
+
+    // forwarding data to create sliders.
     createCarousel(data);
   } catch (error) {
     console.warn(error);
@@ -52,23 +49,53 @@ async function fetchApi() {
 
 fetchApi();
 
-async function createCarousel(data) {
-  carouselContainer.innerHTML = "";
+//Component that check screen size and change slider amount with screen width.
+// function checkScreenWidth() {
+//   if (window.matchMedia("(min-width: 1100px)").matches) {
+//     return 4;
+//   } else {
+//     return 2;
+//   }
+// }
 
-  let beginning = sliderPerPage * currentPage;
-  let end = beginning + sliderPerPage;
-  let paginatedItems = data.slice(beginning, end);
+// Creating sliders
+async function createCarousel(blogs) {
+  //checking screen width before splitting them up into chunks.
+  // If i did not do this i would only get 4 items.
+  // let sliderPerPage = checkScreenWidth(sliders);
+  // console.log(sliderPerPage);
+  // // checking how many pages to create.
 
-  for (let i = 0; i < paginatedItems.length; i++) {
-    let carouselItems = paginatedItems[i];
-    console.log(carouselItems);
-    carouselContainer.innerHTML += `<a href="blog-specific.html?id=${carouselItems.id}" class="blog-itm-box">
-                          <h3>${carouselItems.title.rendered}</h3>
+  // //set up and slice.
+  // let beginning = sliderPerPage * currentPage;
+  // let end = beginning + sliderPerPage;
+  // let paginatedItems = data.slice(beginning, end);
+
+  for (let i = 0; i < blogs.length; i++) {
+    // blogsArray = blogs[i];
+    // console.log(blogsArray);
+    carouselContainer.innerHTML += `<a href="blog-specific.html?id=${blogs[i].id}" class="blog-itm-box">
+                          <h3>${blogs[i].title.rendered}</h3>
                           <div class="slider-img_box">
-                          <img class="slider-img" src="${carouselItems.acf.featured_img.url}" alt="${carouselItems.acf.featured_img.name}"/>
+                          <img class="slider-img" src="${blogs[i].acf.featured_img.url}" alt="${blogs[i].acf.featured_img.name}"/>
                           </div>
                           </a>`;
   }
+
+  const sliderItem = carouselContainer.getElementsByClassName("blog-itm-box");
+
+  console.log(sliderItem.length);
+
+  carouselRight.addEventListener("click", () => {
+    carouselContainer.append(sliderItem[0]);
+    console.log(sliderItem[0]);
+  });
+
+  carouselLeft.addEventListener("click", () => {
+    carouselContainer.prepend(sliderItem[sliderItem.length - 1]);
+
+    console.log(sliderItem[sliderItem.length - 1]);
+  });
 }
 
 // index.html category fetches
