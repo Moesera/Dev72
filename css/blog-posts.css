@@ -28,7 +28,7 @@ h1 {
 }
 
 .post-content_box:hover {
-  background: var(--page-color);
+  background: var(--main-color);
 }
 
 .post-content_box a {

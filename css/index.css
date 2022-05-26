@@ -38,7 +38,7 @@
 }
 
 .blog-itm-box:hover {
-  background: var(--page-color);
+  background: var(--main-color);
 }
 
 .blog-itm-box h3 {
@@ -110,7 +110,7 @@
 }
 
 .content-box:hover {
-  background: var(--page-color);
+  background: var(--main-color);
 }
 
 .content-box h4 {
