@@ -24,23 +24,6 @@ async function fetchApi() {
     const response = await fetch(apiUrl);
     const data = await response.json();
 
-    // // Checking when screen size changes.
-    // window.addEventListener("resize", () => {
-    //   if (window.matchMedia("(min-width: 1100px)").matches) {
-    //     createCarousel(data, 4);
-    //   } else {
-    //     createCarousel(data, 2);
-    //   }
-    // });
-
-    // //Getting size of the screen at the moment on load.
-    // let sliderPerPage = checkScreenWidth();
-
-    // // Carousel arrows hide or show.
-    // let page = Math.ceil(data.length / sliderPerPage - 1);
-    // console.log(page);
-
-    // forwarding data to create sliders.
     createCarousel(data);
   } catch (error) {
     console.warn(error);
@@ -49,31 +32,9 @@ async function fetchApi() {
 
 fetchApi();
 
-//Component that check screen size and change slider amount with screen width.
-// function checkScreenWidth() {
-//   if (window.matchMedia("(min-width: 1100px)").matches) {
-//     return 4;
-//   } else {
-//     return 2;
-//   }
-// }
-
 // Creating sliders
 async function createCarousel(blogs) {
-  //checking screen width before splitting them up into chunks.
-  // If i did not do this i would only get 4 items.
-  // let sliderPerPage = checkScreenWidth(sliders);
-  // console.log(sliderPerPage);
-  // // checking how many pages to create.
-
-  // //set up and slice.
-  // let beginning = sliderPerPage * currentPage;
-  // let end = beginning + sliderPerPage;
-  // let paginatedItems = data.slice(beginning, end);
-
   for (let i = 0; i < blogs.length; i++) {
-    // blogsArray = blogs[i];
-    // console.log(blogsArray);
     carouselContainer.innerHTML += `<a href="blog-specific.html?id=${blogs[i].id}" class="blog-itm-box">
                           <h3>${blogs[i].title.rendered}</h3>
                           <div class="slider-img_box">
