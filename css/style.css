@@ -96,7 +96,7 @@ a {
 .home {
   grid-area: home;
   position: fixed;
-  z-index: 1000;
+  z-index: 9999;
   width: 100%;
 }
 
@@ -107,6 +107,7 @@ a {
   z-index: 1000;
   height: 100%;
   right: 0px;
+  z-index: 9999;
 }
 
 .contact {
@@ -117,13 +118,14 @@ a {
   z-index: 1000;
   height: 100%;
   left: 0;
+  z-index: 9999;
 }
 
 .blog {
   grid-area: blog;
   position: fixed;
   bottom: 0px;
-  z-index: 1000;
+  z-index: 9999;
   width: 100%;
 }
 
