@@ -2,7 +2,7 @@
 const apiUrl = "https://landson.site/thefunction/wp-json/wp/v2/posts?acf_format=standard&per_page=20";
 
 // html elements
-const showMoreButton = document.querySelector(".cta");
+const showMoreButton = document.getElementById("showMore");
 
 // Fetch
 async function fetchApi() {

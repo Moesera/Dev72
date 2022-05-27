@@ -256,11 +256,6 @@ img {
   transform: scaleX(0);
 }
 
-/* hide element */
-.hide-element {
-  display: none;
-}
-
 .hidden {
   visibility: hidden;
 }
