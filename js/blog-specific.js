@@ -16,7 +16,6 @@ async function fetchDetails() {
   try {
     const response = await fetch(apiUrl);
     const data = await response.json();
-    console.log(data);
 
     if (!data) {
       throw new error(error);
@@ -71,13 +70,13 @@ async function createHtml(blogDetails) {
   // Popup close
   document.addEventListener("click", (evnt) => {
     if (evnt.target === document.querySelector(".popup_modal.modal-visible")) {
-      document.querySelector("popup_modal").classList.remove(".modal-visible");
+      document.querySelector(".popup_modal.modal-visible").classList.remove("modal-visible");
     }
   });
   // exit modal with exit
   document.addEventListener("keyup", (evnt) => {
     if (evnt.key === "Escape" && document.querySelector(".popup_modal.modal-visible")) {
-      document.querySelector("popup_modal").classList.remove(".modal-visible");
+      document.querySelector(".popup_modal.modal-visible").classList.remove(".modal-visible");
     }
   });
 }
