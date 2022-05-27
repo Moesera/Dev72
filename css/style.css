@@ -167,17 +167,18 @@ img {
   visibility: hidden;
   transition: all 0.35s ease-in;
   z-index: 9999;
+  background: rgba(0, 0, 0, 0.9);
 }
 
 .modal-visible {
   visibility: visible;
   opacity: 1;
 }
-
 .modal_items {
   border-radius: 5px;
   background: var(--main-color);
   cursor: default;
+  width: 95%;
 }
 
 .modal_items > * {
@@ -186,7 +187,7 @@ img {
 }
 
 .modal-image {
-  align-self: center;
+  width: 100%;
 }
 
 /* CTA */
