@@ -45,17 +45,12 @@ async function createCarousel(blogs) {
 
   const sliderItem = carouselContainer.getElementsByClassName("blog-itm-box");
 
-  console.log(sliderItem.length);
-
   carouselRight.addEventListener("click", () => {
     carouselContainer.append(sliderItem[0]);
-    console.log(sliderItem[0]);
   });
 
   carouselLeft.addEventListener("click", () => {
     carouselContainer.prepend(sliderItem[sliderItem.length - 1]);
-
-    console.log(sliderItem[sliderItem.length - 1]);
   });
 }
 

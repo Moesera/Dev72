@@ -266,12 +266,12 @@ img {
 }
 @media only screen and (max-width: 1100px) {
   .heading-txt {
-    font-size: 3.7vw;
+    font-size: 3.3vw;
     margin: 13% 0 5%;
   }
 
   .cta {
-    font-size: 1.5vw;
+    font-size: 1.3vw;
   }
 
   .cta a {
@@ -361,6 +361,12 @@ img {
   .nav-item:hover {
     font-size: 1em;
   }
+
+  .cta {
+    font-size: 1.9vw;
+    width: 170px;
+    height: 100px;
+  }
 }
 
 @media only screen and (max-width: 650px) {
@@ -369,9 +375,9 @@ img {
   }
 
   .cta {
-    font-size: 1em;
-    width: 250px;
-    height: 68px;
+    font-size: 0.7em;
+    width: 194px;
+    height: 50px;
   }
 
   .cta a {

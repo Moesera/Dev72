@@ -8,8 +8,8 @@ if (event.target.id === "email") {
 }
 */
 
-//checking screen width before splitting them up into chunks.
-// If i did not do this i would only get 4 items.
+// // checking screen width before splitting them up into chunks.
+
 // let sliderPerPage = checkScreenWidth(sliders);
 // console.log(sliderPerPage);
 // // checking how many pages to create.
@@ -19,7 +19,7 @@ if (event.target.id === "email") {
 // let end = beginning + sliderPerPage;
 // let paginatedItems = data.slice(beginning, end);
 
-//Component that check screen size and change slider amount with screen width.
+// // Component that check screen size and change slider amount with screen width.
 // function checkScreenWidth() {
 //   if (window.matchMedia("(min-width: 1100px)").matches) {
 //     return 4;
