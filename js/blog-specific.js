@@ -34,14 +34,14 @@ async function createHtml(blogDetails) {
   pageTitle.innerText = "TheFunction | " + blogDetails.title.rendered;
 
   specificContainer.innerHTML += `<div class="post-header_img">
-                                    <img class="modal-image" data-open="imgModal" src="${blogDetails.acf.banner_img.url}" alt="${blogDetails.acf.banner_img.name}" />
+                                    <img class="content-modal_image" data-open="imgModal" src="${blogDetails.acf.banner_img.url}" alt="${blogDetails.acf.banner_img.name}" />
                                     </div>
                                     <div class="content_text-box">${blogDetails.acf.content}</div>`;
 
   aboutContainer.innerHTML = `<div class="author-name_img">
                               <h2>${blogDetails.acf.author_name}</h2>
                               <div class="author-img">
-                              <img class="modal-image" data-open="imgModal" src="${blogDetails.acf.author_img.url}" alt="${blogDetails.acf.author_img.name}"/>
+                              <img class="author-modal_image" data-open="imgModal" src="${blogDetails.acf.author_img.url}" alt="${blogDetails.acf.author_img.name}"/>
                               </div>
                               </div>
                               <div class="author-content">

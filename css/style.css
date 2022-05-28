@@ -176,17 +176,21 @@ img {
 }
 .modal_items {
   border-radius: 5px;
-  background: var(--main-color);
   cursor: default;
-  width: 95%;
+  width: 65%;
 }
 
 .modal_items > * {
   padding: 1rem;
   display: flex;
+  justify-content: center;
 }
 
-.modal-image {
+.author-modal_image {
+  width: 65%;
+}
+
+.content-modal_image {
   width: 100%;
 }
 
