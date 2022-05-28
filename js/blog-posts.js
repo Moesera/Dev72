@@ -46,9 +46,15 @@ function add(chunks) {
 function createContainerPosts(firstArray, secondArray) {
   const postContainer = document.querySelector(".container0");
   const hiddenPostContainer = document.querySelector(".container1");
-
+  const buttonTxt = document.getElementById("btn-txt");
   showMoreButton.addEventListener("click", () => {
     hiddenPostContainer.classList.toggle("hide-element");
+
+    if (buttonTxt.innerHTML === "see more") {
+      buttonTxt.innerHTML = "see less";
+    } else {
+      buttonTxt.innerHTML = "see more";
+    }
   });
 
   for (let i = 0; i < firstArray.length; i++) {
