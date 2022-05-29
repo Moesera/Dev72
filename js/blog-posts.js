@@ -3,6 +3,7 @@ const apiUrl = "https://landson.site/thefunction/wp-json/wp/v2/posts?acf_format=
 
 // html elements
 const showMoreButton = document.getElementById("showMore");
+const parentContainer = document.querySelector(".container-wrapper");
 
 // Fetch
 async function fetchApi() {
@@ -19,6 +20,7 @@ async function fetchApi() {
     add(chunks);
   } catch (error) {
     console.warn(error);
+    parentContainer.innerHTML = `<div class="error">Could not fetch blog posts, use the contact form if error is recurring</div>`;
   }
 }
 
@@ -26,8 +28,6 @@ fetchApi();
 
 // Creating chunks out of the fetch result.
 function add(chunks) {
-  const parentContainer = document.querySelector(".container-wrapper");
-
   const firstArray = chunks[0];
   const secondArray = chunks[1];
 

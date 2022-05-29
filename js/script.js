@@ -24,6 +24,9 @@ async function fetchApi() {
     createCarousel(data);
   } catch (error) {
     console.warn(error);
+    carouselContainer.innerHTML = `<div class="error">Something went wrong, please contact us through the contact form if error is recurring</div>`;
+    popularPostContainer.innerHTML += `<div class="error">Something went wrong, please contact us through the contact form if error is recurring</div>`;
+    newPostContainer.innerHTML += `<div class="error">Something went wrong, please contact us through the contact form if error is recurring</div>`;
   }
 }
 

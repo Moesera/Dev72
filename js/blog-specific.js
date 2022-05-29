@@ -17,13 +17,10 @@ async function fetchDetails() {
     const response = await fetch(apiUrl);
     const data = await response.json();
 
-    if (!data) {
-      throw new error(error);
-    }
-
     createHtml(data);
   } catch (error) {
     console.log("error" + error);
+    specificContainer.innerHTML = `<div class="error">Something went wrong with fetching the post, please contact us if error is recurring</div>`;
   }
 }
 
