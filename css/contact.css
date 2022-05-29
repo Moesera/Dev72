@@ -18,7 +18,7 @@ h1 {
 }
 
 .container-wrapper h2,
-h3,
+h2,
 h1 {
   font-family: var(--main-font);
   text-transform: uppercase;
@@ -51,7 +51,7 @@ h1 + p {
   margin-top: 0;
 }
 
-.contact-info > h3 {
+.contact-info > h2 {
   margin-bottom: 0;
   margin-top: 0;
 }
@@ -216,7 +216,7 @@ textarea {
     font-size: 2.3vw;
   }
 
-  .contact-info > h3 {
+  .contact-info > h2 {
     font-size: 2.8vw;
   }
 
@@ -246,7 +246,7 @@ textarea {
     font-size: 0.9em;
   }
 
-  .contact-info > h3 {
+  .contact-info > h2 {
     font-size: 1.2em;
   }
 
