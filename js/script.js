@@ -5,9 +5,6 @@ const newPostContainer = document.querySelector(".new-content_wrapper");
 const carouselRight = document.querySelector("#carousel-next");
 const carouselLeft = document.querySelector("#carousel-prev");
 
-// Carousel items
-let currentPage = 0;
-
 // Url addons to fetches
 const popularPostsId = 3;
 const newPostsId = 4;
@@ -18,7 +15,7 @@ const urlEmbed = "&_embed";
 const apiUrl = "https://landson.site/thefunction/wp-json/wp/v2/posts?acf_format=standard&per_page=20";
 const categoryUrl = apiUrl + urlEmbed + getCategory;
 
-let sliderPerPage = 4;
+//Fetch
 async function fetchApi() {
   try {
     const response = await fetch(apiUrl);

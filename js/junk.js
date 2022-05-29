@@ -8,6 +8,10 @@ if (event.target.id === "email") {
 }
 */
 
+// Carousel items
+// let currentPage = 0;
+// let sliderPerPage = 4;
+
 // // checking screen width before splitting them up into chunks.
 
 // let sliderPerPage = checkScreenWidth(sliders);
