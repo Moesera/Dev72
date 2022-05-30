@@ -4,8 +4,10 @@
 
 ## Description
 
-This is a website i made for the first year exam, Its a coding blog where you can learn to code.
+This is a website i made for the first year exam, Its a coding blog where you can learn to code.<br>
 and can find subject to read up on to learn.
+
+Link to the website: [https://thefunction-sigvel.netlify.app/](https://thefunction-sigvel.netlify.app/)
 
 ## Built with
 
