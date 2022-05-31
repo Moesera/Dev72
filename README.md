@@ -22,7 +22,7 @@ and can find subject to read up on to learn.
 1. Clone the repo:
 
 ```bash
-git clone git@github.com:Sigvel/semester-project.git
+git clone git@github.com:Sigvel/project-exam-1-Sigvel.git
 ```
 
 2. Install the dependencies:
@@ -46,7 +46,7 @@ Then:
 
 - Open Git Bash
 - Change the current working directory to the location you want it
-- Type `git clone https://github.com/YOUR-USERNAME/semester-project` and press enter.
+- Type `git clone https://github.com/YOUR-USERNAME/project-exam-1-Sigvel` and press enter.
   Your local clone will be created.
 
 ### Running
