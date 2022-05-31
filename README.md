@@ -7,7 +7,7 @@
 This is a website i made for the first year exam, Its a coding blog where you can learn to code.<br>
 and can find subject to read up on to learn.
 
-Link to the website: [https://thefunction-sigvel.netlify.app/](https://thefunction-sigvel.netlify.app/)
+[![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://thefunction-sigvel.netlify.app/)
 
 ## Built with
 
@@ -69,4 +69,3 @@ If you want to know more about forking, pull requests and contributing to a proj
 ## Contact
 
 [My LinkedIn page](https://www.linkedin.com/in/tony-sigvel/)
-
