@@ -11,9 +11,9 @@ Link to the website: [https://thefunction-sigvel.netlify.app/](https://thefuncti
 
 ## Built with
 
-- HTML
-- CSS
-- JAVASCRIPT
+![made-with-HTML](https://img.shields.io/badge/Made%20with-HTML-1f425f.svg)<br>
+![made-with-CSS](https://img.shields.io/badge/Made%20with-CSS-1f425f.svg)<br>
+![made-with-javascript](https://img.shields.io/badge/Made%20with-JavaScript-1f425f.svg)
 
 ## Getting started
 
