@@ -66,6 +66,9 @@ To contribute to the project please follow these steps:
 
 If you want to know more about forking, pull requests and contributing to a project follow this link [Contribution to projects](https://docs.github.com/en/get-started/quickstart/contributing-to-projects)
 
+## API Reference
+[Wordpress REST API](https://developer.wordpress.org/rest-api/)
+
 ## Contact
 
 [My LinkedIn page](https://www.linkedin.com/in/tony-sigvel/)
