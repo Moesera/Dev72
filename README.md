@@ -19,18 +19,6 @@ and can find subject to read up on to learn.
 
 ### Installing
 
-1. Clone the repo:
-
-```bash
-git clone git@github.com:Sigvel/project-exam-1-Sigvel.git
-```
-
-2. Install the dependencies:
-
-```
-npm install
-```
-
 Option for contribution:
 
 - Click fork.
