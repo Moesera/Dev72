@@ -38,7 +38,7 @@ Option for contribution:
 - Above the list of files, click Code.
 - Open with Github Desktop
 
-Choose either:
+Or chose either:
 
 - HTTPS, SSH or Github CLI and copy the link
 
@@ -47,14 +47,13 @@ Then:
 - Open Git Bash
 - Change the current working directory to the location you want it
 - Type `git clone https://github.com/YOUR-USERNAME/project-exam-1-Sigvel` and press enter.
-  Your local clone will be created.
+  Your local clone will then be created.
 
 ### Running
 
-To run the app, run the following command:
-
-```bash
-npm run start
+```
+As long as you have uploaded the provided files and deployed it to a website provider,
+the project should be up and running, fetching content from the wordpress CMS.
 ```
 
 ## Contributing
