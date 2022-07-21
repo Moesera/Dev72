@@ -261,6 +261,11 @@ img {
   transform: scaleX(0);
 }
 
+/* transition */
+.transit {
+  transition: ease-in 0.5s;
+}
+
 /* hidden class */
 .hidden {
   visibility: hidden;

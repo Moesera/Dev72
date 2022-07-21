@@ -77,7 +77,7 @@
   color: var(--main-color);
   cursor: pointer;
   z-index: 9998;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 1);
 }
 
 .fa-caret-right:hover,
@@ -93,7 +93,7 @@
   color: var(--main-color);
   cursor: pointer;
   z-index: 9998;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 1);
 }
 
 /* popular and whats new section*/
