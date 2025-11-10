@@ -1,7 +1,5 @@
 # Project Exam 1
 
-![readme header image](https://user-images.githubusercontent.com/89355439/171043518-12cb786f-6750-4858-92db-e11c9330b4d4.jpg)
-
 ## Description
 
 This is a website i made for the first year exam, Its a coding blog where you can learn to code.<br>
